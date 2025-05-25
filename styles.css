@@ -1,80 +1,42 @@
-body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+.hero-section {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
 
-    /* Hero Section */
-    .hero {
-      background-image: url('https://m.media-amazon.com/images/I/51ZVeRqZvGL._SX3000_.jpg');
-      height: 500px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-    /* Product Cards Container */
-    .product-cards {
-      position: absolute;
-      top: 250px;
-      left: 50px;
-      display: flex;
-      gap: 20px;
-    }
+/* Product Cards */
+.product-cards {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  display: flex;
+  gap: 20px;
+}
 
-    /* Individual Product Card */
-    .card {
-      width: 300px;
-      height: 300px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 15px;
-      box-sizing: border-box;
-      text-align: center;
-    }
+.product-card {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-    .card img {
-      width: 100px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin: 10px 0 5px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 14px;
-    }
-
-    /* Comment Section */
-    .comments-section {
-      margin: 580px 50px 50px;
-      max-width: 600px;
-    }
-
-    .comments-section h2 {
-      margin-bottom: 10px;
-    }
-
-    textarea {
-      width: 100%;
-      height: 100px;
-      padding: 10px;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .comment {
-      background-color: #f1f1f1;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-
-    .comment strong {
-      display: block;
-      margin-bottom: 5px;
-    }
+.product-card img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
